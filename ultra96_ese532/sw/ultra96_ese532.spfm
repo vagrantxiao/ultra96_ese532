@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdx:platform sdx:vendor="xilinx.com"
+              sdx:library="sdx"
+              sdx:name="ultra96_ese532"
+              sdx:version="1.0"
+              sdx:schemaVersion="1.0"
+              xmlns:sdx="http://www.xilinx.com/sdx">
+    <sdx:description>
+ultra96_ese532
+    </sdx:description>
+    <sdx:systemConfigurations sdx:defaultConfiguration="standalone">
+        <sdx:configuration sdx:name="sysconfig1"
+                           sdx:displayName="sysconfig1"
+                           sdx:defaultProcessorGroup="standalone_domain"
+                           sdx:runtimes="cpp">
+            <sdx:description>sysconfig1</sdx:description>
+            <sdx:prebuilt sdx:data="prebuilt"/>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="sysconfig1/boot/sysconfig1.bif"
+                            sdx:readme="sysconfig1/boot/generic.readme"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone_domain"
+                                sdx:displayName="standalone on psu_cortexa53_0"
+                                sdx:cpuType="cortex-a53"
+                                sdx:cpuInstance="psu_cortexa53_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:ldscript="sysconfig1/standalone_domain/lscript.ld"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+        <sdx:configuration sdx:name="standalone"
+                           sdx:displayName="standalone"
+                           sdx:defaultProcessorGroup="standalone"
+                           sdx:runtimes="cpp">
+            <sdx:description>standalone platform for ultra96-v2</sdx:description>
+            <sdx:prebuilt sdx:data="prebuilt"/>
+            <sdx:bootImages sdx:default="standard">
+                <sdx:image sdx:name="standard"
+                            sdx:bif="standalone/boot/standalone.bif"
+                            sdx:readme="standalone/boot/generic.readme"
+                            />
+            </sdx:bootImages>
+            <sdx:processorGroup sdx:name="standalone"
+                                sdx:displayName="standalone"
+                                sdx:cpuType="cortex-a53"
+                                sdx:cpuInstance="psu_cortexa53_0">
+                <sdx:os sdx:name="standalone"
+                        sdx:displayName="standalone"
+                        sdx:ldscript="standalone/standalone/lscript.ld"
+                        sdx:bspConfig="standalone/standalone/system.mss"
+                />
+            </sdx:processorGroup>
+        </sdx:configuration>
+    </sdx:systemConfigurations>
+</sdx:platform>
