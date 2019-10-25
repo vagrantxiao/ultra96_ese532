@@ -1,9 +1,9 @@
 # ultra96_ese532
-This repo is to show you how to use the platform created by us.
+This repo is to show you how to use the platform created by us for [ESE532](https://www.seas.upenn.edu/~ese532/)
 
 ## Motivation
 
-The platform released in the [official website]( http://ultra96.org/support/design/24166/156) has limited clock options to choose, which may affect your project performance. You can download the platform from [here](http://www.seas.upenn.edu/~ese532/fall2019/code/ultra96_ese532.tar.gz), or clone our repo, the platform is under [/ultra96_ese532](/ultra96_ese532).
+The platform released in the [official website]( http://ultra96.org/support/design/24166/156) has limited clock options to choose, which may affect your project performance. You can download the platform from [here](http://www.seas.upenn.edu/~ese532/fall2019/code/ultra96_ese532.tar.gz), or clone our repo. The platform is under [/ultra96_ese532](/ultra96_ese532).
  ## How to integrate the new platform
  Extract the platform file. Open SDx 2018.3, and create a new application project. When choosing platform, click add.
  
